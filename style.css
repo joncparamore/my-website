@@ -144,6 +144,8 @@
 /*–– Details: authors + title + journal ––*/
 .pub-details {
   line-height: 1.4;
+  padding-left: 3rem;
+  text-indent: -3rem;
 }
 
 /*–– Author names bolded ––*/
@@ -255,4 +257,18 @@
   display: block;
   color: #003c6c;            /* your accent color */
   margin-bottom: 0px;
+}
+
+/* Stack to one column on any screen ≤ 820px wide */
+@media (max-width: 820px) {
+  .content-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;         /* space between text and image */
+  }
+
+  .side-image {
+    margin-top: 1rem;    /* give a little vertical breathing room */
+    margin-left: 0;      /* reset any horizontal push */
+  }
 }
