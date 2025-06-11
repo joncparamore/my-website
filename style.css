@@ -264,4 +264,9 @@
     grid-template-columns: 1fr;  /* single column */
     row-gap: 1.5rem;             /* space between text & image */
   }
+
+  .side-image {
+    justify-self: center;
+    margin-top: 1rem;
+  }
 }
