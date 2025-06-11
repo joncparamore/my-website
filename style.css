@@ -1,0 +1,258 @@
+/* Layout structure */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar layout */
+.sidebar {
+  width: 268px;
+  background-color: #003c6c;
+  color: #13a5dc;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #fdc700;
+}
+
+.sidebar .Title {
+  color: #13a5dc;
+}
+
+/* Fix image inside sidebar */
+.sidebar img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 5px solid lightgray; 
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/*Removing customizing link colors */
+.sidebar a {
+  color: #fdc700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+/* Right side (topnav + content) */
+.mainarea {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #E9E5DC;
+  color: #003c6c;
+}
+
+/* Top nav inside mainarea */
+.topnav {
+  background-color: #003c6c;
+  border-bottom: 1px solid #fdc700;
+  padding: 10px 20px;
+}
+
+/* Topnav menu styling */
+.topnav nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.topnav nav ul li a {
+  text-decoration: none;
+  color: #fdc700;;
+  font-weight: bold;
+}
+
+/* Page Titles*/
+.Page-Title {
+  margin-bottom: 0.5em;            /* space below the underline */
+  padding-bottom: 0.1em;           /* space between text & line */
+  border-bottom: 1px solid #fdc700;/* thickness + your brand color */
+  color: #003c6c;                  /* match the text color too */
+}
+/* Content area */
+.content {
+  padding: 20px;
+  text-align: justify;
+  flex-grow: 1;
+  max-width: 1400px;
+}
+
+.content img {
+  max-width: 500px;   /* never wider than this */
+  width: 100%;        /* otherwise fill whatever space you give it */
+  height: auto;       /* keep its aspect ratio */
+  border-radius: 15px;
+  box-shadow: 0 0 6px #003c6c;
+}
+
+.content-row {
+  display: grid;
+  grid-template-columns: 4fr 3fr;  /* 3 parts text, 2 parts image */
+  column-gap: 3rem;
+}
+
+.text {
+  min-width: 200px;
+}
+
+.side-image {
+  margin-left: auto;  /* pushes it to the right edge of col-2 */
+}
+
+.side-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 6px #003c6c;
+}
+
+/* Status (date, “to appear”, etc.) */
+.pub-section-title {
+  display: block;
+  color: #006aad;            /* your accent color */
+  margin-bottom: 15px;
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pub-entry {
+  display: grid;
+  grid-template-columns: 5em 1fr;
+  column-gap: 1rem;
+  align-items: start;
+}
+
+/*–– Status label (“to appear”, “2025”) ––*/
+.pub-status {
+  font-weight: bold;
+  font-size: large;
+  color: #003c6c;
+  justify-self: end;
+}
+
+/*–– Details: authors + title + journal ––*/
+.pub-details {
+  line-height: 1.4;
+}
+
+/*–– Author names bolded ––*/
+.pub-authors {
+  
+}
+
+/*–– Journal names italicized ––*/
+.pub-journal {
+  font-style: italic;
+  font-weight: bold;
+  font-size: large;
+  color: #003c6c;
+}
+
+.pub-info {
+  
+}
+
+/*–– Responsive fallback: stack on small screens ––*/
+@media (max-width: 600px) {
+  .pub-entry {
+    grid-template-columns: 1fr;
+  }
+  .pub-status {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Container for the button links */
+.pub-links {
+  margin-top: 0.2rem;
+  grid-column: 2;
+}
+
+/* Base button style */
+.pub-details .btn {
+  padding: 0.1em 0.4em; /*space inside border */
+  margin-right: 0.4em;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: 1px solid #006aad;
+  border-radius: 10px;
+  color: #006aad;
+  background-color: lightgrey;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover effect */
+.pub-details .btn:hover {
+  background-color: #003c6c;
+  color: #fdc700;
+  border-color: #fdc700;
+}
+
+.teach-section-title {
+  display: inline-block;
+  color: #006aad;            /* your accent color */
+  margin-bottom: 15px;
+}
+
+.teach-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.teach-entry {
+  display: grid;
+  grid-template-columns: 15em 1fr;
+  column-gap: 1rem;
+  align-items: start;
+}
+
+.teach-course {
+  font-weight: bold;
+  font-size: large;
+  color: #003c6c;
+  align-self: left;
+}
+
+.teach-dates {
+  line-height: 1.4;
+}
+
+/* Base button style */
+.teach-dates .btn {
+  padding: 0.1em 0.4em; /*space inside border */
+  margin-right: 0.4em;
+  font-size: 0.9em;
+  text-decoration: none;
+  border: 1px solid #006aad;
+  border-radius: 10px;
+  color: #006aad;
+  background-color: lightgrey;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Status (date, “to appear”, etc.) */
+.pak-section-title {
+  display: block;
+  color: #006aad;            /* your accent color */
+  margin-bottom: 0px;
+}
+
+.pak-subsection-title {
+  display: block;
+  color: #003c6c;            /* your accent color */
+  margin-bottom: 0px;
+}
