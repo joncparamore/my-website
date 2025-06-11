@@ -216,7 +216,7 @@
 
 .teach-entry {
   display: grid;
-  grid-template-columns: 15em 1fr;
+  grid-template-columns: 11em 1fr;
   column-gap: 1rem;
   align-items: start;
 }
