@@ -259,7 +259,7 @@
   margin-bottom: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .content-row {
     grid-template-columns: 1fr;  /* single column */
     row-gap: 1.5rem;             /* space between text & image */
