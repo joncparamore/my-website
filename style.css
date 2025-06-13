@@ -261,6 +261,7 @@
 
 @media (max-width: 1200px) {
   .content-row {
+    display: grid;
     grid-template-columns: 1fr;  /* single column */
     row-gap: 1.5rem;             /* space between text & image */
   }
