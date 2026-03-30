@@ -11,7 +11,7 @@
   color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
-  border-right: 1px solid #215732;
+  border-right: 2px solid #215732;
 }
 
 .sidebar .Title {
@@ -31,7 +31,7 @@
 
 /*Removing customizing link colors */
 .sidebar a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.2s ease;
@@ -42,8 +42,8 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  background-color: #E9E5DC;
-  color: #BA0C2F;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Top nav inside mainarea */
