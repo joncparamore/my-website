@@ -11,7 +11,7 @@
   color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
-  border-right: 2px solid #215732;
+  border-right: 5px solid #215732;
 }
 
 .sidebar .Title {
@@ -49,7 +49,7 @@
 /* Top nav inside mainarea */
 .topnav {
   background-color: #BA0C2F;
-  border-bottom: 2px solid #215732;
+  border-bottom: 5px solid #215732;
   padding: 10px 20px;
 }
 
