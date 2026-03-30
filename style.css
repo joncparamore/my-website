@@ -11,7 +11,7 @@
   color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
-  border-right: 2px solid #215732;
+  border-right: 2px solid #000000;
 }
 
 .sidebar .Title {
@@ -23,7 +23,7 @@
   width: 100%;
   max-width: 200px;
   border-radius: 50%;
-  border: 2px solid #215732; 
+  border: 2px solid #ffffff; 
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   display: block;
   margin: 0 auto 20px;
@@ -31,7 +31,7 @@
 
 /*Removing customizing link colors */
 .sidebar a {
-  color: #007D8A;
+  color: #F1B434;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.2s ease;
@@ -49,7 +49,7 @@
 /* Top nav inside mainarea */
 .topnav {
   background-color: #BA0C2F;
-  border-bottom: 5px solid #215732;
+  border-bottom: 2px solid #000000;
   padding: 10px 20px;
 }
 
@@ -73,7 +73,7 @@
   margin-bottom: 0.5em;            /* space below the underline */
   padding-bottom: 0.1em;           /* space between text & line */
   border-bottom: 2px solid #BA0C2F;/* thickness + your brand color */
-  color: #215732;                  /* match the text color too */
+  color: #000000;                  /* match the text color too */
 }
 /* Content area */
 .content {
@@ -88,7 +88,7 @@
   width: 100%;        /* otherwise fill whatever space you give it */
   height: auto;       /* keep its aspect ratio */
   border-radius: 15px;
-  box-shadow: 0 0 6px #215732;
+  box-shadow: 0 0 6px #BA0C2F;
 }
 
 .content-row {
@@ -110,13 +110,13 @@
   height: auto;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 0 6px #215732;
+  box-shadow: 0 0 6px #BA0C2F;
 }
 
 /* Status (date, “to appear”, etc.) */
 .pub-section-title {
   display: block;
-  color: #215732;            /* accent color */
+  color: #000000;            /* accent color */
   margin-bottom: 15px;
 }
 
@@ -187,9 +187,9 @@
   margin-right: 0.4em;
   font-size: 0.9em;
   text-decoration: none;
-  border: 1px solid #215732;
+  border: 1px solid #BA0C2F;
   border-radius: 10px;
-  color: #215732;
+  color: #BA0C2F;
   background-color: lightgrey;
   font-weight: bold;
   transition: background-color 0.2s, color 0.2s;
@@ -197,14 +197,14 @@
 
 /* Hover effect */
 .pub-details .btn:hover {
-  background-color: #BA0C2F;
-  color: #215732;
-  border-color: #215732;
+  background-color: #F1B434;
+  color: #BA0C2F;
+  border-color: #BA0C2F;
 }
 
 .teach-section-title {
   display: inline-block;
-  color: #215732;            /* accent color */
+  color: #000000;            /* accent color */
   margin-bottom: 15px;
 }
 
@@ -238,24 +238,24 @@
   margin-right: 0.4em;
   font-size: 0.9em;
   text-decoration: none;
-  border: 1px solid #215732;
+  border: 1px solid #BA0C2F;
   border-radius: 10px;
-  color: #215732;
+  color: #BA0C2F;
   background-color: lightgrey;
   font-weight: bold;
   transition: background-color 0.2s, color 0.2s;
 }
 /* Hover effect */
 .teach-dates .btn:hover {
-  background-color: #BA0C2F;
-  color: #215732;
-  border-color: #215732;
+  background-color: #F1B434;
+  color: #BA0C2F;
+  border-color: #BA0C2F;
 }
 
 /* Status (date, “to appear”, etc.) */
 .pak-section-title {
   display: block;
-  color: #215732;            /*  accent color */
+  color: #000000;            /*  accent color */
   margin-bottom: 0px;
 }
 
