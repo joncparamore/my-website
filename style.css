@@ -7,15 +7,15 @@
 /* Sidebar layout */
 .sidebar {
   width: 268px;
-  background-color: #003c6c;
-  color: #13a5dc;
+  background-color: #BA0C2F;
+  color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
-  border-right: 1px solid #fdc700;
+  border-right: 1px solid #215732;
 }
 
 .sidebar .Title {
-  color: #13a5dc;
+  color: #ffffff;
 }
 
 /* Fix image inside sidebar */
@@ -23,7 +23,7 @@
   width: 100%;
   max-width: 200px;
   border-radius: 50%;
-  border: 5px solid lightgray; 
+  border: 5px solid #215732; 
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   display: block;
   margin: 0 auto 20px;
@@ -31,7 +31,7 @@
 
 /*Removing customizing link colors */
 .sidebar a {
-  color: #fdc700;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.2s ease;
@@ -43,13 +43,13 @@
   display: flex;
   flex-direction: column;
   background-color: #E9E5DC;
-  color: #003c6c;
+  color: #BA0C2F;
 }
 
 /* Top nav inside mainarea */
 .topnav {
-  background-color: #003c6c;
-  border-bottom: 1px solid #fdc700;
+  background-color: #BA0C2F;
+  border-bottom: 1px solid #000000;
   padding: 10px 20px;
 }
 
@@ -64,7 +64,7 @@
 
 .topnav nav ul li a {
   text-decoration: none;
-  color: #fdc700;;
+  color: #000000;;
   font-weight: bold;
 }
 
@@ -72,8 +72,8 @@
 .Page-Title {
   margin-bottom: 0.5em;            /* space below the underline */
   padding-bottom: 0.1em;           /* space between text & line */
-  border-bottom: 1px solid #fdc700;/* thickness + your brand color */
-  color: #003c6c;                  /* match the text color too */
+  border-bottom: 1px solid #215732;/* thickness + your brand color */
+  color: #BA0C2F;                  /* match the text color too */
 }
 /* Content area */
 .content {
@@ -88,7 +88,7 @@
   width: 100%;        /* otherwise fill whatever space you give it */
   height: auto;       /* keep its aspect ratio */
   border-radius: 15px;
-  box-shadow: 0 0 6px #003c6c;
+  box-shadow: 0 0 6px #BA0C2F;
 }
 
 .content-row {
@@ -110,13 +110,13 @@
   height: auto;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 0 6px #003c6c;
+  box-shadow: 0 0 6px #BA0C2F;
 }
 
 /* Status (date, “to appear”, etc.) */
 .pub-section-title {
   display: block;
-  color: #006aad;            /* accent color */
+  color: #000000;            /* accent color */
   margin-bottom: 15px;
 }
 
@@ -137,7 +137,7 @@
 .pub-status {
   font-weight: bold;
   font-size: large;
-  color: #003c6c;
+  color: #BA0C2F;
   justify-self: end;
 }
 
@@ -158,7 +158,7 @@
   font-style: italic;
   font-weight: bold;
   font-size: large;
-  color: #003c6c;
+  color: #BA0C2F;
 }
 
 .pub-info {
@@ -187,9 +187,9 @@
   margin-right: 0.4em;
   font-size: 0.9em;
   text-decoration: none;
-  border: 1px solid #006aad;
+  border: 1px solid #215732;
   border-radius: 10px;
-  color: #006aad;
+  color: #215732;
   background-color: lightgrey;
   font-weight: bold;
   transition: background-color 0.2s, color 0.2s;
@@ -197,14 +197,14 @@
 
 /* Hover effect */
 .pub-details .btn:hover {
-  background-color: #003c6c;
-  color: #fdc700;
-  border-color: #fdc700;
+  background-color: #BA0C2F;
+  color: #215732;
+  border-color: #215732;
 }
 
 .teach-section-title {
   display: inline-block;
-  color: #006aad;            /* accent color */
+  color: #215732;            /* accent color */
   margin-bottom: 15px;
 }
 
@@ -224,7 +224,7 @@
 .teach-course {
   font-weight: bold;
   font-size: large;
-  color: #003c6c;
+  color: #BA0C2F;
   align-self: left;
 }
 
@@ -238,9 +238,9 @@
   margin-right: 0.4em;
   font-size: 0.9em;
   text-decoration: none;
-  border: 1px solid #006aad;
+  border: 1px solid #215732;
   border-radius: 10px;
-  color: #006aad;
+  color: #215732;
   background-color: lightgrey;
   font-weight: bold;
   transition: background-color 0.2s, color 0.2s;
@@ -249,13 +249,13 @@
 /* Status (date, “to appear”, etc.) */
 .pak-section-title {
   display: block;
-  color: #006aad;            /*  accent color */
+  color: #215732;            /*  accent color */
   margin-bottom: 0px;
 }
 
 .pak-subsection-title {
   display: block;
-  color: #003c6c;            /* accent color */
+  color: #BA0C2F;            /* accent color */
   margin-bottom: 0px;
 }
 
