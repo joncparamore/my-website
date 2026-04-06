@@ -31,7 +31,7 @@
 
 /*Removing customizing link colors */
 .sidebar a {
-  color: #13322B;
+  color: #000000;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.2s ease;
