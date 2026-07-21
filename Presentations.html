@@ -8,15 +8,7 @@
 </head>
 <body>
     <div class = "layout">
-        <aside class = "sidebar">
-            <img src="Pictures/headshot.JPG" alt="Your photo">
-            <h3 class = "Title">Jonathan Charles Paramore</h3>
-            <p><h4 class = "Title">McDonnell Postdoctoral Fellow <br> WashU in St. Louis</h4></p>
-            <p><a href="mailto:j.paramore@wustl.edu">j.paramore@wustl.edu</a></p>
-            <p><a href = "https://github.com/joncparamore">Github</a></p>
-            <p><a href = "https://scholar.google.com/citations?user=gbhOGboAAAAJ&hl=en">Google Scholar</a></p>
-            <p><a href = "https://orcid.org/my-orcid?orcid=0000-0002-6611-5439">Orcid</a></p>
-        </aside>
+        <aside id="sidebar-container" class="sidebar"></aside>
         <div class = "mainarea">
             <header class = "topnav">
                 <nav>
@@ -241,5 +233,18 @@
             </main>
         </div>
     </div>
+    <script>
+    fetch("sidebar.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Could not load sidebar");
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById("sidebar-container").innerHTML = html;
+        })
+        .catch(error => console.error(error));
+    </script>
 </body>
 </html>
