@@ -206,3 +206,26 @@
     </script>
 </body>
 </html>
+
+.pub-list {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.pub-entry {
+    display: contents;
+}
+
+.pub-status {
+    width: auto;
+    max-width: none;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.pub-details {
+    min-width: 0;
+    width: auto;
+}
