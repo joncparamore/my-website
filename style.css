@@ -306,7 +306,7 @@
 .teaching-grid .teach-course {
     width: auto;
     max-width: none;
-    text-align: right;
+    text-align: left;
     white-space: nowrap;
 }
 
