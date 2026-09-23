@@ -301,11 +301,12 @@
     display: contents;
 }
 
-/* Right-align publication dates/statuses and course names */
+/* Left-align publication dates/statuses and course names */
 .publications-grid .pub-status,
 .teaching-grid .teach-course {
     width: auto;
     max-width: none;
+    justify-self: stretch;
     text-align: left;
     white-space: nowrap;
 }
